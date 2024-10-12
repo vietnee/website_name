@@ -1,0 +1,253 @@
+/* CSS cho phần header */
+.header {
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    width: 100px; /* Kích thước logo */
+}
+
+.menu {
+  
+    display: flex;
+    gap: 1px; /* Khoảng cách giữa các nút */
+    margin: -25px;
+    margin-left: 5px;
+    align-items: center ;
+    justify-content: center ;
+  .stickeer{
+    font-size: 20px;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Hiệu ứng khi di chuột */
+  }
+  .button:hover {
+        background-color: pink; 
+        color: white;
+    }
+    
+}
+
+.menu_item {
+    
+    margin: 5px ;
+    padding: 5px 5px;
+    margin-left: 5px;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+.button {
+    display: inline-block;
+    padding: 5px;
+    .button:hover {
+        text-decoration: underline;
+      }
+    /* Màu nền của nút */
+    color: black; /* Màu chữ */
+    text-align: center;
+    text-decoration: none; /* Xóa gạch dưới mặc định của thẻ <a> */
+    border-radius: 20px; /* Bo tròn góc nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng khi di chuột */
+}
+/* CSS cho section với background */
+.background-section {
+    display: block;
+    background-image: url('background.png'); /* Thay bằng đường dẫn hình nền */
+    height: 100%;
+    background-color: lightblue;
+    background-position: center; /* Canh giữa hình nền */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    background-size: cover; /* Làm đầy toàn bộ màn hình với hình nền */
+    width: 1520px;
+    text-align: center;
+    color: white;
+    height: 1400px;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    
+}
+.content{
+    margin-top: 20px;
+   top: 10px;  /* Căn từ trên xuống */
+    left: 1000px; /* Căn từ trái qua */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    
+    .shop {
+        background-image: url('button.png');
+        background-color: transparent;
+        color: #088178;
+        border: 0;
+        padding: 14px 80px 14px 65px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 15px;
+      }
+    .trade{
+        color :white;
+
+    }
+    .on{
+        color: mediumseagreen;
+        font-size: 45px;
+    }
+    .super{
+        height: 65px;
+        font-size: 45px;
+    }
+
+}
+.content{
+    text-align: left;
+    padding-left: 30px ;
+    margin-top: 0px;
+}
+.trade{
+    color: rgb(129, 129, 162);
+    padding-top: 80px;
+}
+.super{
+    color: darkkhaki;
+}
+.on{
+    color: darkkhaki;
+}
+.super,.trade .on{
+font-size: larger;
+}
+
+/* CSS cho banner */
+.banner {
+    padding: 10px;
+    background-color: lightgrey;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*css cho menu_item */
+/* Đặt lại các kiểu mặc định của trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.menu_item .button {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.background-section {
+    background-color: #f0f0f0;
+    padding: 50px;
+    text-align: center;
+}
+
+.trade, .super, .on {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Phần biểu tượng ở trên cùng */
+.icons-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.icon-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 120px;
+}
+
+/* Phần Sản phẩm Nổi bật */
+.featured-products {
+    padding: 50px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 15px 0 5px;
+    color: #333;
+}
+
+.product-card p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-card .buy-button {
+    background-color: #00b894;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.benefit-container {
+    display: flex;
+    justify-content: space-between;
+}

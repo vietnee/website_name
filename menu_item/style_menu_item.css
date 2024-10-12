@@ -1,0 +1,381 @@
+/* CSS cho phần header */
+.header {
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    width: 100px; /* Kích thước logo */
+}
+
+.menu {
+    display: flex;
+    gap: 5px; /* Khoảng cách giữa các nút */
+
+    
+}
+
+.menu_item {
+    margin: 5px ;
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+.button {
+    
+    display: inline-block;
+    padding: 4px;
+    color: white; /* Màu chữ */
+    text-align: center;
+    text-decoration: none; /* Xóa gạch dưới mặc định của thẻ <a> */
+    border-radius: 10px; /* Bo tròn góc nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng khi di chuột */
+}
+.button:hover {
+    background-color: pink; 
+    color: white;
+}
+
+/* CSS cho section với background */
+.background-section {
+    display: block;
+    height: 100%;
+    background-color: lightblue;
+    
+    background-position: center; /* Canh giữa hình nền */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    background-size: cover; /* Làm đầy toàn bộ màn hình với hình nền */
+    width: 1500px;
+    text-align: center;
+    color: white;
+    height: 1200px;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    
+}
+.content{
+    margin-top: 20px;
+   top: 10px;  /* Căn từ trên xuống */
+    left: 1000px; /* Căn từ trái qua */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    
+
+}
+.content{
+    text-align: left;
+    padding-left: 30px ;
+    margin-top: 0px;
+}
+.trade{
+    color: rgb(129, 129, 162);
+    padding-top: 80px;
+}
+.super{
+    color: darkkhaki;
+}
+.on{
+    color: darkkhaki;
+}
+.super,.trade .on{
+font-size: larger;
+}
+
+/* CSS cho banner */
+.banner {
+    padding: 10px;
+    background-color: lightgrey;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*css cho menu_item */
+/* Đặt lại các kiểu mặc định của trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.menu_item .button {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.background-section {
+    background-color: #f0f0f0;
+    padding: 50px;
+    text-align: center;
+}
+
+.trade, .super, .on {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Phần biểu tượng ở trên cùng */
+.icons-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.icon-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 120px;
+}
+
+/* Phần Sản phẩm Nổi bật */
+.featured-products {
+    padding: 200px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    .box5 {
+        margin-left: 10px;
+        font-size: 16.125px;
+        margin-bottom: -15px;
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .box6 {
+        margin-left: 12px;
+        margin-top: 0px;
+        margin-bottom: -5px;
+        padding-bottom: 0px;
+        padding-top: 10px
+    }
+    .box1 {
+        color: #01796f;
+        font-weight: bolder;
+        position: absolute;
+        font-size: 15px;
+        font-weight: 900;
+        bottom: 5px;
+        left: 10px;
+        flex: 1;
+        bottom: 5px;
+        margin-bottom: 7px;
+    }
+    
+    .box2 {
+        background-color: #e8f6ea;
+        color: #01796f;
+        font-weight: 300;
+        padding: 0px 12px;
+         border: 1px solid #cce7d0; 
+        cursor: 25px;
+        transition: transform 0.2s;
+        margin: 0px 0;
+        position: relative;
+        left: 0px;
+        bottom: -10px;
+        border-radius: 20px;
+        font-size: 15px;
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+   
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 15px 0 5px;
+    color: #333;
+}
+
+.product-card p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-card .buy-button {
+    background: ;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.background-section{
+    .featured-products {
+        color: midnightblue;
+    }
+}
+.featured-products{
+    margin-top: 20px; 
+}
+
+
+.benefit-container {
+
+    
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px; /* Increase the gap between benefit items */
+    margin-top: 20px;
+    justify-content: space-between;
+    margin: 20px;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+  
+  .free-shipping {
+    background-color: #00b894;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+  
+    
+    .safemoney{
+        background-color: #00b894;
+                    color: white;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    display: inline-block;
+                    margin-top: 10px;
+
+    }
+    .support{
+        background-color: #00b894;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .Promotions {
+        background-color: #00b894;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+  
+    .happy-sell{
+        background-color: #00b894;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 10px;
+
+
+
+
+
+    }
+    
+    
+    .benefititem {
+
+    width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+    width: 200px;
+    box-shadow: 1px 1px;
+    padding: 20px;
+    border: 1px solid #27ae60;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+    
+    .Online-order{
+        background-color: #00b894;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+  
+    img {
+      margin-bottom: 10px;
+    }
+    color: black;
+    text-align: center;
+    .productItem img {
+        position: absolute;
+        top: 10px;
+        width: 180px;
+        height: auto;
+        padding: 10px;
+        border-radius: 10%;
+    }
+        
+}
