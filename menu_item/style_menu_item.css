@@ -41,6 +41,78 @@
     background-color: pink; 
     color: white;
 }
+.background-section {
+    display: block;
+    background-image: url('/clone/background.png');
+    height: 100vh; /* Sử dụng đơn vị vh để căn chỉnh theo chiều cao viewport */
+    background-color: lightblue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1520px;
+    text-align: center;
+    color: white;
+}
+.content{
+    margin-top: 20px;
+   top: 10px;  /* Căn từ trên xuống */
+    left: 1000px; /* Căn từ trái qua */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    
+    .shop {
+        background-image: url('/clone/button.png');
+        background-color: transparent;
+        color: #088178;
+        border: 0;
+        padding: 14px 80px 14px 65px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 15px;
+      }
+    .trade{
+        color :white;
+
+    }
+    .on{
+        color: mediumseagreen;
+        font-size: 45px;
+    }
+    .super{
+        height: 65px;
+        font-size: 45px;
+    }
+
+}
+.content{
+    text-align: left;
+    padding-left: 30px ;
+    margin-top: 0px;
+}
+.trade{
+    color: rgb(129, 129, 162);
+    padding-top: 80px;
+}
+.super{
+    color: darkkhaki;
+}
+.on{
+    color: darkkhaki;
+}
+.super,.trade .on{
+font-size: larger;
+}
+
+/* CSS cho banner */
+.banner {
+    padding: 10px;
+    background-color: lightgrey;
+    text-align: center;
+    margin-top: 20px;
+}
 
 /* CSS cho section với background */
 .background-section {
@@ -154,7 +226,7 @@ body {
 
 /* Phần Sản phẩm Nổi bật */
 .featured-products {
-    padding: 200px;
+    padding: 90px;
     text-align: center;
 }
 
@@ -165,17 +237,17 @@ body {
 }
 
 .products-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 50px;
 }
 
 .product-card {
-    background-color: #fff;
+    position: relative; /* Giúp các phần tử con có thể định vị tương đối với thẻ này */
+    width: 300px; /* Giả định kích thước của thẻ sản phẩm */
     padding: 20px;
-    border-radius: 10px;
     border: 1px solid #ccc;
-    text-align: center;
+    border-radius: 10px;
     .box5 {
         margin-left: 10px;
         font-size: 16.125px;
@@ -185,12 +257,14 @@ body {
     }
     
     .box6 {
+        margin-right: 10px;
         margin-left: 12px;
-        margin-top: 0px;
+        margin-top: 1px;
         margin-bottom: -5px;
         padding-bottom: 0px;
         padding-top: 10px
-    }
+       
+    } 
     .box1 {
         color: #01796f;
         font-weight: bolder;
@@ -203,27 +277,42 @@ body {
         bottom: 5px;
         margin-bottom: 7px;
     }
+       
+         .price-box-container {
+            display: flex;
+            align-items: center; /* Căn giữa theo chiều dọc */
+            justify-content: flex-start; /* Căn theo chiều ngang, bạn có thể điều chỉnh để khoảng cách hợp lý */
+            
+        }
+        .box2 { 
+            
+            position: absolute;
+            top: 360px;
+            right: 8px;
+            width: 40px;
+            height: 33px;
+            background-color: #088178;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border-radius: 50%; */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            font-size: 26px;
+            border-radius: 50px;
+        
+        
+
+    }   
+       
+        
+        .box6 {
+            margin-right: 12px; /* Khoảng cách giữa box6 và box2 */
+            padding-top: 10px;
+        }
+   
+   
     
-    .box2 {
-        background-color: #e8f6ea;
-        color: #01796f;
-        font-weight: 300;
-        padding: 0px 12px;
-         border: 1px solid #cce7d0; 
-        cursor: 25px;
-        transition: transform 0.2s;
-        margin: 0px 0;
-        position: relative;
-        left: 0px;
-        bottom: -10px;
-        border-radius: 20px;
-        font-size: 15px;
-        padding: 3%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
+   
 }
 
 .product-card img {
@@ -250,8 +339,8 @@ body {
 }
 
 .product-card .buy-button {
-    background: ;
-    color: #fff;
+    background: beige;
+    color: mintcream; /* hoặc color: #fff; */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -341,19 +430,7 @@ body {
     }
     
     
-    .benefititem {
 
-    width: 300px;
-    height: 200px;
-    margin-bottom: 30px;
-    width: 200px;
-    box-shadow: 1px 1px;
-    padding: 20px;
-    border: 1px solid #27ae60;
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    
-    
     .Online-order{
         background-color: #00b894;
         color: white;
@@ -367,8 +444,10 @@ body {
     img {
       margin-bottom: 10px;
     }
+    .benefititem {
     color: black;
     text-align: center;
+    }
     .productItem img {
         position: absolute;
         top: 10px;
@@ -377,5 +456,228 @@ body {
         padding: 10px;
         border-radius: 10%;
     }
+    #box {
+        display: flex;
+        /* Thiết lập flexbox để xếp các phần tử con trong một hàng */
+        justify-content: space-between;
+        /* Căn đều khoảng cách giữa các phần tử con, tạo khoảng cách bằng nhau */
+        flex-wrap: wrap;
+        /* Cho phép các phần tử con tự động xuống dòng nếu không đủ chỗ */
+        padding: 0 80px;
+        /* Tạo khoảng trống 80px ở hai bên trái và phải của phần tử */
+    }
+    .box-logic {
+        width: 300px;
+        height: 200px;
+        background-image: url('b7.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+
+
+    #box .box-logic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url("b7.jpg");
+        background-size: cover; /* Hoặc contain, hoặc kích thước cố định */
+        background-position: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        width: 300px; /* Ví dụ */
+        height: 200px; /* Ví dụ */
+    }
+    .benefititem{
+
+    border-radius: 5px;
+
+    width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+    width: 200px;
+    box-shadow: 1px 1px;
+    padding: 20px;
+    border: 1px solid #27ae60;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+    }
+
+    .featured-products{
+        .Summer-Collection-New-Morden-Design{
+            font-size: 15px;
+            border: 10px;
+           padding-bottom: 20px;
+            margin-top: 40px;
+        }
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Các thuộc tính khác tùy chỉnh kích thước, khoảng cách, v.v. */
+        gap: 20px ;
+        width: 100%;
+        margin-bottom: 10px;
+        .season{
+            color: white !important;
+            margin-top: 72px;
+            margin-bottom: 25px; /* Tạo khoảng cách giữa tiêu đề và đoạn văn */
+            margin-left: 15px;
+
+        }
+        .winter{
+            color: brown;
+            margin-left: 15px;
+        }
+        .new{
+            color: white !important;
+            margin-top: 72px;
+            margin-bottom: 25px; /* Tạo khoảng cách giữa tiêu đề và đoạn văn */
+            margin-left: 15px;
+
+        }      
+        .spring{
+            color: brown;
+            margin-left: 15px;
+
+        }
+        .tshirts{
+            color: white !important;
+            margin-top: 72px;
+            margin-bottom: 25px; /* Tạo khoảng cách giữa tiêu đề và đoạn văn */
+            margin-left: 15px;
+
+
+        }
+        .newtrend{
+            color: brown;
+            margin-left: 15px
+
+        }
+      }
+      
+      .box-logic {
+        width: 380px;
+        height: 200px;
+      }
+      .email{
+        height: 200px;
+        width: 100%;
+        background-color: blue;
+      }
+    
+      #newsletter {
+        height: 140px;
+        display:flex; /* Thiết lập bố cục flexbox cho phần tử này */
+        justify-content: space-between; /* Căn giữa các phần tử con với khoảng cách đều */
+        flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng nếu không đủ không gian */
+        align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+        background-image: url("../../images/banner/b14.png"); /* Thiết lập hình nền cho phần newsletter */
+        background-repeat: no-repeat; /* Không lặp lại hình nền */
+        background-position: 20% 30%; /* Căn hình nền ở vị trí cụ thể */
+        background-color: #041e42; /* Đặt màu nền cho phần newsletter */
+    
+    
+     }
+     .newtest {
+        padding: 10px 80px;
+        margin: 10px 0px;
+     }
+     #newsletter .form {
+        display: flex;
+        align-items: center;
+        margin-right: 80px;
+    }
+    #newsletter button {
         
+        height: 42px;
+        padding: 0 20px;
+        background-color: #088178;
+        color: #fff;
+        border: 2px solid #088178;
+        border-left: none;
+        border-radius: 0 8px 8px 0;
+        cursor: pointer;
+    }
+    #newsletter input {
+        height: 40px;
+        padding: 0 15px;
+        font-size: 14px;
+        width: 250px;
+        border-right: none;
+        border-radius: 8px 0 0 8px;
+        outline: none;
+    }
+    footer
+ {
+     background-color:#DCDCDC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+footer .col
+{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 20%;
+   margin-left: 30px;
+   margin-top: 80px;
+   margin-right: 25px;
 }
+footer logo
+{
+   margin-bottom: 25px;  
+}
+footer h4{
+    font-size: 14px;
+}
+footer p
+{
+   font-size: 13px;
+   color:#484848;
+   margin-bottom: 10px;
+   margin-top: 5px;
+   margin-right: 0px;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color:#484848;
+    margin-bottom: 10px;
+}
+footer .follow
+{
+  margin-bottom: -20px;
+}
+footer .follow i
+{
+  color:#484848;
+  padding-right: 4px;
+  cursor: pointer;
+  
+}
+footer .install .row img
+{
+  border: 1px solid #088178;
+  border-radius:6px;
+  margin-right: 10px;
+  margin-left: -10px;
+ 
+}
+footer .install img
+{
+   margin: 10px 0 15px 20;
+ 
+}
+footer .follow i:hover
+footer a:hover
+{
+  color:#088178;
+}
+footer .col1 {
+   margin-bottom: 10px;
+}
+
